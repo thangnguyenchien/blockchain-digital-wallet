@@ -1,0 +1,42 @@
+extends ../../layout.pug
+
+block content
+    section.section
+        .container
+            .level
+                .level-left
+                    if !linkRequest
+                        h2.title.is-3 Confirm transaction
+                    else 
+                        h2.title.is-3 Address                         
+                .level-right
+                    div
+                        if wallet 
+                            h2.h2.title.is-6 
+                                | Current wallet: #{wallet.id}
+                            div
+                                a(class="button", href="/shop/cart/wallet/unlink") Unlink
+                        else
+                            h2.title.is-6 Select payment method
+                            div
+                                a(class="button", href="/shop/wallet/anonymous") Using private wallet
+                                a(class="button", href="/shop/wallet") Linking your wallet              
+            hr
+            if message
+                if(message.isError)
+                    div(class="alert") #{message.data}
+                else 
+                    div(class="success") #{message.data}
+            div
+                p 
+                    | Please send #{amount} NaiveCoin to address #{shopAddress}                            
+            div 
+                form(action="/shop/cart/validate", method="POST")
+                    | Your cart id: #{cartId}
+                    input(type="text", name="cartId", value=cartId, id="cartId", hidden)
+                    br
+                    | Transaction id: 
+                    br
+                    input(type="text", name="transactionId", value="", id="transactionId", required)
+                    br
+                    input(type="submit", value="submit")

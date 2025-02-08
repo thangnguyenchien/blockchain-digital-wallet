@@ -1,0 +1,73 @@
+2021-09-26 10:20:04,207-[INFO]:Transcation updater started
+2021-09-26 10:20:13,857-[INFO]:Transcation updater started
+2021-09-26 10:31:37,412-[INFO]:Transcation updater started
+2021-09-26 10:32:43,019-[INFO]:Transcation updater started
+2021-09-26 11:01:23,584-[INFO]:Transcation updater started
+2021-09-26 11:08:53,906-[ERROR]:Transaction updater stopped error: Cannot connect to host localhost:3001 ssl:default [The remote computer refused the network connection]
+2021-09-26 11:19:34,264-[INFO]:Transcation updater started
+2021-09-26 11:19:37,985-[INFO]:Transcation updater started
+2021-09-26 11:19:51,004-[INFO]:Transcation updater started
+2021-09-26 11:20:13,648-[INFO]:Transcation updater started
+2021-09-26 11:20:26,946-[INFO]:Transcation updater started
+2021-09-26 11:26:44,863-[ERROR]:Transaction updater stopped error: Cannot connect to host localhost:3001 ssl:default [The remote computer refused the network connection]
+2021-09-26 11:27:31,617-[INFO]:Transcation updater started
+2021-09-26 11:27:46,585-[INFO]:Transcation updater started
+2021-10-02 14:58:49,116-[INFO]:Transcation updater started
+2021-10-11 08:49:43,034-[INFO]:Transcation updater started
+2021-10-11 09:14:06,632-[INFO]:Transcation updater started
+2021-10-11 09:30:40,123-[INFO]:Transcation updater started
+2021-10-11 09:31:50,729-[INFO]:Transaction id 41422ed7b4580836e3e94414f8520a2fbc4bc8cba635386b9d892c4bb4d80b73 confirmed
+2021-10-11 09:33:35,494-[INFO]:Transcation updater started
+2021-10-11 09:38:23,619-[INFO]:Transcation updater started
+2021-10-11 09:39:32,221-[INFO]:Transaction id 00860f2afd6432b5cd4a598bab2f382edc95ad82fd5c1ba2e373d9a75967bdbd confirmed
+2021-10-11 09:44:07,050-[INFO]:Transaction id 755a69e20a425f298e251fe0ebf6dbfecacab5ea7dfdd930c64320c2a1dbc879 confirmed
+2021-10-11 09:44:07,070-[INFO]:Transaction id e16db4279bdc544da6403780be91d72adb52ea78ccce79d1891014855b5cae6d confirmed
+2021-10-11 09:54:52,800-[INFO]:Client started
+2021-10-11 09:54:53,337-[INFO]:Transcation updater started
+2021-10-11 10:09:21,183-[INFO]:Client started
+2021-10-11 10:09:21,701-[INFO]:Transcation updater started
+2021-10-11 10:11:54,274-[INFO]:Transaction id 7739a775b4c7b2ce13678ee96f098924c45fd2f04deba9c8f2c1e4a29879a1da confirmed
+2021-10-11 10:12:28,160-[ERROR]:Client has been force to close error: 'wallet_option'
+2021-10-11 10:12:43,772-[INFO]:Client started
+2021-10-11 10:12:44,471-[INFO]:Transcation updater started
+2021-10-11 10:13:52,087-[INFO]:Client started
+2021-10-11 10:13:52,706-[INFO]:Transcation updater started
+2021-10-11 10:14:21,520-[INFO]:Client started
+2021-10-11 10:14:22,091-[INFO]:Transcation updater started
+2021-10-11 10:14:49,859-[INFO]:Client started
+2021-10-11 10:14:50,383-[INFO]:Transcation updater started
+2021-10-11 10:15:24,577-[INFO]:Client started
+2021-10-12 09:26:44,969-[INFO]:Transcation updater started
+2021-10-12 09:29:07,757-[INFO]:Transaction id 0d45a6fe262d4de7f3ea90c373b62e3d87750bca6d51447545eff5d33faa3c13 confirmed
+2021-10-12 09:47:05,976-[INFO]:Transcation updater started
+2021-10-12 09:58:36,831-[INFO]:Transcation updater started
+2021-10-12 10:01:28,868-[INFO]:Transcation updater started
+2021-10-12 10:04:13,499-[INFO]:Transaction id e717d6f5f82fc94aea0f4ab8f80ff84a5e6f39221efb7fc7f2b102bdca48c5ff confirmed
+2021-10-12 10:05:59,701-[INFO]:Transaction id 85defbba4ae8409ea337142fec1d854ea8e8ba78827b114061a94329d8b44aa8 confirmed
+2021-10-12 10:08:02,021-[INFO]:Transaction id 810d9b3e18b415d63954ea563a62803eadc77cf04e94ed793b37bf4aa4339497 confirmed
+2021-10-12 10:19:00,733-[INFO]:Transaction id 6eb15997db9afc7facd45d56f6bcb87972c34eaa6fd5fad8b4db0935f6b4501e confirmed
+2021-10-15 11:43:48,878-[INFO]:Transcation updater started
+2021-10-15 11:50:12,890-[INFO]:Transcation updater started
+2021-10-15 14:08:45,440-[INFO]:Transcation updater started
+2021-10-15 14:12:20,692-[INFO]:Transcation updater started
+2021-10-15 14:14:33,881-[INFO]:Transcation updater started
+2021-10-15 14:17:44,161-[INFO]:Transcation updater started
+2021-10-15 14:21:17,675-[INFO]:Transcation updater started
+2021-10-15 14:22:02,391-[INFO]:Transcation updater started
+2021-10-15 14:28:21,984-[INFO]:Transcation updater started
+2021-10-15 14:30:36,617-[INFO]:Transcation updater started
+2021-10-15 14:32:10,327-[INFO]:Transcation updater started
+2021-10-15 14:38:03,450-[INFO]:Transcation updater started
+2021-10-15 14:39:54,238-[INFO]:Transaction id 530bc5e47de4e579fa3db2cfbe2235c106cd733d2fe59b4778745a13d56f3636 confirmed
+2021-10-18 10:18:39,195-[INFO]:Transcation updater started
+2021-10-18 10:53:07,585-[INFO]:Transcation updater started
+2021-10-18 10:58:54,953-[INFO]:Transcation updater started
+2021-10-18 11:02:10,922-[INFO]:Transcation updater started
+2021-10-18 11:06:34,018-[INFO]:Transcation updater started
+2021-10-18 11:08:27,386-[INFO]:Transcation updater started
+2021-10-18 14:45:22,901-[INFO]:Transcation updater started
+2021-10-18 14:46:01,043-[INFO]:Transcation updater started
+2021-10-18 14:47:05,830-[INFO]:Transcation updater started
+2021-10-18 16:35:12,526-[INFO]:Transcation updater started
+2021-10-18 16:41:47,142-[INFO]:Transcation updater started
+2021-10-18 16:46:47,903-[INFO]:Transaction id 4927172e67dafc0981d9d40868447cda49b29d3689c3fde0f679f73451d5482d confirmed

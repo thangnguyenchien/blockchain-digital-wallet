@@ -1,0 +1,50 @@
+extends ../layout.pug
+
+block content
+    section.section
+        .container
+            .level
+                .level-left
+                    h2.title.is-3 Shop
+                .level-right
+                    div
+                        if wallet 
+                            h2.h2.title.is-6 
+                                | Current wallet: #{wallet.id}
+                            div
+                                a(class="button", href="/shop/cart/wallet/unlink") Unlink
+                        else
+                            h2.title.is-6 Select payment method
+                            div
+                                a(class="button", href="/shop/wallet/anonymous") Using private wallet
+                                a(class="button", href="/shop/wallet") Linking your wallet                                                             
+            hr
+            if(message) 
+                if(message.isError)
+                    div(class="alert") #{message.data}
+                else 
+                    div(class="success") #{message.data}                
+            .columns.is-multiline
+                each item in items                    
+                        .column.is-one-quarter
+                            .box
+                                .content.is-small
+                                    p.title.is-4
+                                        | Product:  
+                                        small #{item.name}
+                                    p.subtitle.is-6
+                                        | Price: 
+                                        code.tooltip
+                                            | #{item.price}
+                                    if wallet
+                                        div 
+                                            button(type="button", href="#", onclick="event.preventDefault(); document.getElementById("+ "\"" + item.id + "\"" +").submit()") Add to cart
+                                            form(id=item.id, action="/shop/cart/item", method="post", style="display: none")
+                                                input(type="number", value="1", id="itemCount", name="itemCount")
+                                                input(type="text", value=item.id, id="itemId", name="itemId")
+                                    else if address
+                                        div 
+                                            button(type="button", href="#", onclick="event.preventDefault(); document.getElementById("+ "\"" + item.id + "\"" +").submit()") Add to cart
+                                            form(id=item.id, action="/shop/cart/item", method="post", style="display: none")
+                                                input(type="number", value="1", id="itemCount", name="itemCount")
+                                                input(type="text", value=item.id, id="itemId", name="itemId")                             

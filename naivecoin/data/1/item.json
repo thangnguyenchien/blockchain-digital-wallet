@@ -1,0 +1,32 @@
+[
+    {
+        "id": "c9af2339a89f2bbbce11ad860fdbc8c201221ef11fcba43cf44e414e8303b323",
+        "name": "RX6969 XT",
+        "price": 269000
+    },
+    {
+        "id": "9751d448285f2f00a586cc72590c1db8c22ccd093beecb3a5fe0b5004ecbddd6",
+        "name": "STX 1069",
+        "price": 10000
+    },
+    {
+        "id": "90c443d15d6d18a4bf61c4e203b65404b394571a4b04041c6a4ebf749512f84d",
+        "name": "Ryzen 69 9600G",
+        "price": 50000
+    },
+    {
+        "id": "c0eb41f219b58b9bff2d79d112bdc749fd00cf68c48ec777a462aec2dfc1db72",
+        "name": "Terabyte B690 SE v1.0",
+        "price": 27000
+    },
+    {
+        "id": "c9faaacc68da50e170399e9e1a8223b9d3b1228678fc4bfbf76204e392292eca",
+        "name": "Crossbow Vegan 16G 2666Ghz",
+        "price": 2000
+    },
+    {
+        "id": "3959d449f23d9933435c6c6b90a7f7849a35571ded45e3ecdf41cf7b818794b8",
+        "name": "Bandyson Platinum 2000W",
+        "price": 5000
+    }
+]

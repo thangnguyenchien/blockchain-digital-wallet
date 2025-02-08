@@ -1,0 +1,43 @@
+extends ../../layout.pug
+
+block content
+    section.section
+        .container
+            .level
+                .level-left
+                    if !linkRequest
+                        h2.title.is-3 Wallet
+                    else 
+                        h2.title.is-3 Address                         
+                .level-right
+                    div
+                        if wallet 
+                            h2.h2.title.is-6 
+                                | Current wallet: #{wallet.id}
+                            div
+                                a(class="button", href="/shop/cart/wallet/unlink") Unlink
+                        else
+                            h2.title.is-6 Select payment method
+                            div
+                                a(class="button", href="/shop/wallet/anonymous") Using private wallet
+                                a(class="button", href="/shop/wallet") Linking your wallet              
+            hr
+            if message
+                if(message.isError)
+                    div(class="alert") #{message.data}
+                else 
+                    div(class="success") #{message.data}                            
+            if !linkRequest 
+                form(action="/shop/cart/wallet", method="POST")
+                    | Your id:
+                    br 
+                    input(type="text", name="walletId", value="", id="walletId", required)
+                    br
+                    | Password: 
+                    br
+                    input(type="password", name="password", value="", id="password", required)
+                    br
+                    input(type="submit", value="submit")
+            else 
+                p 
+                    | Copy link to your wallet app: #{link}

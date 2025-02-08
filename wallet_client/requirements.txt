@@ -1,0 +1,6 @@
+aiohttp==3.7.4.post0
+PyInquirer==1.0.3
+ujson==4.1.0
+cryptography==3.2.1
+requests==2.25.0
+numpy==1.21.2

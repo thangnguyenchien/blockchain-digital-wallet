@@ -1,0 +1,65 @@
+extends ../../layout.pug
+
+block content
+    section.section
+        .container
+            .level
+                .level-left
+                    h2.title.is-3 Purchase
+                .level-right
+                    div
+                        if wallet 
+                            h2.h2.title.is-6 
+                                | Current wallet: #{wallet.id}
+                                h2.title.is-6 Select payment address:
+                                if(paymentAddresses) 
+                                    form(action="/shop/cart/wallet/purchase" method="POST")
+                                        div
+                                            select(name="paymentAddress") 
+                                                each paymentAddress in paymentAddresses
+                                                    if(paymentAddress.status)
+                                                        option(value=paymentAddress.address, disabled)
+                                                            | address: #{formatters.hash(paymentAddress.address)}
+                                                            | balance: #{paymentAddress.balance}
+                                                            if(paymentAddress.status) 
+                                                                | status: #{paymentAddress.status}
+                                                    else 
+                                                        option(value=paymentAddress.address)
+                                                            | address: #{formatters.hash(paymentAddress.address)}
+                                                            | balance: #{paymentAddress.balance}
+                                            if(items.length)
+                                                div
+                                                    button(type="submit", value="submit")
+                                                        | Confirm transaction
+                            div
+                                a(class="button", href="/shop/cart/wallet/unlink") Unlink
+                        else
+                            h2.title.is-6 Select payment method
+                            div
+                                a(class="button", href="/shop/wallet/anonymous") Using private wallet
+                                a(class="button", href="/shop/wallet") Linking your wallet              
+            hr
+            if(message) 
+                if(message.isError)
+                    div(class="alert") #{message.data}
+                else 
+                    div(class="success") #{message.data}              
+            .columns.is-multiline
+                each item in items                    
+                        .column.is-one-quarter
+                            .box
+                                .content.is-small
+                                    p.title.is-4
+                                        | Product:  
+                                        small #{item.cartItemDetail.name}
+                                    p.subtitle.is-6
+                                        | Price: 
+                                        code.tooltip
+                                            | #{item.cartItemDetail.price}
+                                    p.subtitle.is-6
+                                        | Count: 
+                                        code.tooltip 
+                                            | #{item.count}
+                                    button(type="button", href="#", onclick="event.preventDefault(); document.getElementById("+ "\"" + "cart-remove-" + item.cartItemDetail.id + "\"" +").submit()") Remove
+                                        form(id="cart-remove-" + item.cartItemDetail.id, action="/shop/cart/remove/item", method="post", style="display: none")
+                                            input(type="text", value=item.cartItemDetail.id, id="itemId", name="itemId") 
